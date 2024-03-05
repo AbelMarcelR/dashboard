@@ -87,7 +87,7 @@ def plot_monthly_counts():
     ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                                       ordered=True)
 
-    monthly_counts = day_df.groupby(by=["month", "year"]).agg({
+    monthly_counts = day_df.groupby(by=["mnth", "yr"]).agg({
         "cnt": "sum"
     }).reset_index()
 
